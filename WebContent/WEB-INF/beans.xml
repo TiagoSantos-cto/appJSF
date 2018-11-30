@@ -1,0 +1,6 @@
+<!DOCTYPE xml>
+<beans>
+	 <interceptors>
+        <class>br.com.caelum.livraria.annotation.AnnotationManager</class>
+    </interceptors>	
+</beans>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<ui:composition template="_template.xhtml">
+
+		<ui:define name="titulo"> 
+		<p:outputLabel> Projeto JSF </p:outputLabel>
+		</ui:define>
+		
+		<ui:define name="conteudo">
+		<h:form>
+		
+		<p:outputPanel>
+			<p>
+				<b>JSF</b> (JavaServer Faces) é uma especificação Java para a
+				construção de interfaces de usuário baseadas em componentes para
+				aplicações web. <br />Esta tecnologia possui um modelo de
+				programação dirigido a eventos e permite que o programador se
+				concentre apenas na lógica da aplicação.
+			</p>
+			<p>
+				Nesta aplicação temos um sistema de <b>Cadastro de Livros</b> com
+				tecnologias <i>PrimeFaces</i> e <i>Ajax</i>, além da integração com a
+				especificação <i>CDI</i>.
+			</p>
+				<h:commandLink value="Entrar" action="login?faces-redirect=true" /> &nbsp; &nbsp; <h:commandLink value="Cadastrar-se" action="userForm?faces-redirect=true" />
+		</p:outputPanel>
+			
+		</h:form>
+		
+	</ui:define>
+</ui:composition>
+
+</html>
